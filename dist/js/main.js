@@ -29,3 +29,10 @@ function toggleMenu() {
     showMenu = false;
   }
 }
+
+var typed = new Typed(".typed", {
+  strings: ["A front-end developer", "A quick learner"],
+  typeSpeed: 50,
+  backSpeed: 50,
+  loop: true
+});

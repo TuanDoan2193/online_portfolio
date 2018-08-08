@@ -1,8 +1,8 @@
 .menu-btn {
   position: absolute;
   z-index: 3;
-  right: 35px;
-  top: 35px;
+  right: 32px;
+  top: 32px;
   cursor: pointer;
   transition: all 0.5s ease-out; }
   .menu-btn .btn-line {
@@ -40,14 +40,14 @@
   .menu-nav {
     margin: 0;
     padding: 0;
-    background: #212020;
+    background: black;
     list-style: none;
     transform: translate3d(0, -100%, 0);
     transition: all 0.5s ease-out; }
     .menu-nav.show {
       transform: translate3d(0, 0, 0); }
   .menu-branding {
-    background: #2e2c2c;
+    background: #141313;
     transition: all 0.5s ease-out;
     transform: translate3d(0, 100%, 0); }
     .menu-branding.show {
@@ -112,7 +112,7 @@ body {
       width: 100%;
       height: 100%;
       z-index: -1;
-      background: rgba(46, 44, 44, 0.8); }
+      background: rgba(46, 44, 44, 0); }
 
 h1,
 h2,
@@ -128,10 +128,10 @@ h3 {
   h3.sm-heading {
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
-    background: rgba(51, 49, 49, 0.5); }
+    font-size: 3rem; }
 
 a {
-  color: #fff;
+  color: #000;
   text-decoration: none; }
 
 header {
@@ -146,6 +146,7 @@ main {
   padding: 4rem;
   min-height: calc(100vh - 60px); }
   main .icons {
+    text-align: center;
     margin-top: 1rem; }
     main .icons a {
       padding: 0.4rem; }
@@ -153,9 +154,13 @@ main {
         color: #83c3d3;
         transition: all 0.5s ease-out; }
   main#home {
-    overflow: hidden; }
+    overflow: hidden;
+    color: #000; }
     main#home h1 {
-      margin-top: 20vh; }
+      margin-top: 20vh;
+      text-align: center; }
+    main#home h2 {
+      text-align: center; }
 
 .about-info {
   display: grid;
@@ -178,8 +183,17 @@ main {
     grid-area: job3; }
   .about-info .job {
     background: #3b3838;
-    padding: 0.5rem;
     border-bottom: #83c3d3 5px solid; }
+    .about-info .job h3 {
+      background: #83c3d3;
+      text-align: center;
+      padding: 0.5rem; }
+    .about-info .job h4,
+    .about-info .job p {
+      padding: 0.2rem 0.7rem; }
+    .about-info .job:hover {
+      background-color: #2b2a2a;
+      transition: all 0.5s ease-out; }
 
 .projects {
   display: grid;
@@ -216,18 +230,20 @@ main {
   display: block;
   padding: 0.5rem 1rem;
   border: 0;
-  margin-bottom: 0.3rem; }
+  margin-bottom: 0.3rem;
+  text-align: center; }
   .btn:hover, .btn-dark:hover, .btn-light:hover {
     background: #83c3d3;
-    color: #000; }
+    color: #000;
+    transition: all 0.5s ease-out; }
 
 .btn-dark {
   background: black;
   color: #fff; }
 
 .btn-light {
-  background: #aeabab;
-  color: #333; }
+  background: #e0dfdf;
+  color: #000; }
 
 #main-footer {
   text-align: center;
@@ -264,7 +280,7 @@ main {
     transform: translate3d(-100%, 0, 0);
     font-size: 24px; }
   .menu-branding {
-    height: 25vh;
+    height: 30vh;
     transform: translate3d(100%, 0, 0); }
     .menu-branding .portrait {
       background: url("../img/small_portrait.jpg");
