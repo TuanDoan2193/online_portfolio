@@ -4,12 +4,18 @@ const menu = document.querySelector(".menu");
 const menuNav = document.querySelector(".menu-nav");
 const menuBranding = document.querySelector(".menu-branding");
 const navItem = document.querySelectorAll(".nav-item");
-
+const hr = document.querySelector(".hr");
 //Set Initial State Of Menu
 let showMenu = false;
+let showHr = false;
 
 menuBtn.addEventListener("click", toggleMenu);
-
+window.addEventListener("load", toggleHr);
+function toggleHr() {
+  if (!showHr) {
+    hr.classList.add("show-hr");
+  }
+}
 function toggleMenu() {
   if (!showMenu) {
     menuBtn.classList.add("close");
@@ -31,8 +37,7 @@ function toggleMenu() {
 }
 
 var typed = new Typed(".typed", {
-  strings: ["A front-end developer", "A quick learner"],
-  typeSpeed: 50,
-  backSpeed: 50,
-  loop: true
+  strings: ["A front-end developer"],
+  typeSpeed: 70,
+  backSpeed: 50
 });

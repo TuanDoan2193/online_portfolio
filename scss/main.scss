@@ -34,7 +34,7 @@ h3 {
 }
 
 a {
-  color: #000;
+  color: #fff;
   text-decoration: none;
 }
 
@@ -46,6 +46,19 @@ header {
 
 .text-secondary {
   color: $secondary-color;
+}
+
+.hr {
+  width: 0%;
+  background-color: $secondary-color;
+  height: 3px;
+  border: none;
+  margin-bottom: 2rem;
+  margin-top: 0;
+  &.show-hr {
+    width: 100%;
+    @include easeOut;
+  }
 }
 
 main {
@@ -76,7 +89,6 @@ main {
     h2 {
       text-align: center;
     }
-    color: #000;
   }
 }
 
@@ -149,6 +161,25 @@ main {
       border-color: $secondary-color;
       @include easeOut;
     }
+  }
+
+  .project-title {
+    padding: 0;
+    margin: 0 0 0.5rem 0;
+    text-align: center;
+    text-transform: uppercase;
+    border: 2px solid #fff;
+    width: 100%;
+    @include easeOut;
+
+    &:hover {
+      border: $secondary-color 2px solid;
+      background-color: darken($primary-color, 10);
+    }
+  }
+
+  .project-image {
+    height: 200px;
   }
 }
 
