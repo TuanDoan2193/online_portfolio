@@ -281,7 +281,9 @@ main {
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   .projects {
-    grid-template-columns: repeat(3, 1fr); } }
+    grid-template-columns: repeat(3, 1fr); }
+  #sub-heading {
+    font-size: 2.5rem; } }
 
 @media screen and (max-width: 768px) {
   main {
@@ -313,10 +315,28 @@ main {
     grid-template-areas: "bioimage" "bio" "job1" "job2" "job3";
     grid-template-columns: 1fr; }
   .projects {
-    grid-template-columns: repeat(2, 1fr); } }
+    grid-template-columns: repeat(2, 1fr); }
+  #sub-heading {
+    font-size: 2rem; }
+  #main-heading {
+    font-size: 5rem; } }
 
 @media screen and (max-width: 500px) {
   main#home h1 {
     margin-top: 10vh; }
   .projects {
-    grid-template-columns: repeat(1, 1fr); } }
+    grid-template-columns: repeat(1, 1fr); }
+    .projects .project-image {
+      height: 170px; }
+  #sub-heading {
+    font-size: 1.3rem; }
+  #email {
+    padding: 0.5rem;
+    font-size: 1.5rem; }
+  #phone-number {
+    padding: 0.5rem;
+    font-size: 1.5rem; }
+  #main-heading {
+    font-size: 2.8rem; }
+  .bio.job p {
+    font-size: 1.2rem; } }
