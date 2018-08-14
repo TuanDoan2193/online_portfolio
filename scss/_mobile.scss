@@ -9,6 +9,10 @@
   .projects {
     grid-template-columns: repeat(3, 1fr);
   }
+
+  #sub-heading {
+    font-size: 2.5rem;
+  }
 }
 //Tablets & Small Laptops
 @include mediaMd {
@@ -62,6 +66,14 @@
   .projects {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  #sub-heading {
+    font-size: 2rem;
+  }
+
+  #main-heading {
+    font-size: 5rem;
+  }
 }
 //Smartphone
 @include mediaSm {
@@ -70,5 +82,31 @@
   }
   .projects {
     grid-template-columns: repeat(1, 1fr);
+
+    .project-image {
+      height: 170px;
+    }
+  }
+
+  #sub-heading {
+    font-size: 1.3rem;
+  }
+
+  #email {
+    padding: 0.5rem;
+    font-size: 1.5rem;
+  }
+
+  #phone-number {
+    padding: 0.5rem;
+    font-size: 1.5rem;
+  }
+
+  #main-heading {
+    font-size: 2.8rem;
+  }
+
+  .bio.job p {
+    font-size: 1.2rem;
   }
 }
