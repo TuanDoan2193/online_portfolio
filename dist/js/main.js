@@ -38,6 +38,5 @@ function toggleMenu() {
 
 var typed = new Typed(".typed", {
   strings: ["A front-end developer"],
-  typeSpeed: 70,
-  backSpeed: 50
+  typeSpeed: 40
 });
